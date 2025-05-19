@@ -7,7 +7,7 @@ const PORT = process.env.PORT || 3000;
 app.get("/", (req, res) => {
   res.send(`
     <h1>Hello desde Home</h1>
-    <p>Visita la api en este <a href="http://localhost:3000/api/v1">link</a>.</p>
+    <p>Visita la api en este <a href="http://localhost:3000/api/v1/workouts">link</a>.</p>
     `);
 });
 
