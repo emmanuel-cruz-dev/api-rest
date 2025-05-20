@@ -27,9 +27,13 @@ const createNewWorkout = (req, res) => {
     !body.exercises ||
     !body.trainerTips
   ) {
-    return res
-      .status(400)
-      .send({ status: "FAILED", error: "Missing required fields" });
+    return res.status(400).send({
+      status: "FAILED",
+      data: {
+        error:
+          "One of the following keys is missing or is empty in request body: 'name', 'mode', 'equipment', 'exercices', 'trainerTips'",
+      },
+    });
   }
 
   const newWorkout = {
