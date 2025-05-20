@@ -2,7 +2,7 @@
 GET http://localhost:3000/api/v1/workouts
 
 ### Filtrar workouts por query
-GET http://localhost:3000/api/v1/workouts?mode=amrap
+GET http://localhost:3000/api/v1/workouts?mode=for
 
 ### Crear nuevo workout
 POST http://localhost:3000/api/v1/workouts
