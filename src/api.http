@@ -39,3 +39,6 @@ Content-Type: application/json
 
 ### Eliminar workout por id
 DELETE http://localhost:3000/api/v1/workouts/61dbae02-c147-4e28-863c-db7bd402b2d6
+
+### Obtener records
+GET http://localhost:3000/api/v1/workouts/4a3d9aaa-608c-49a7-a004-66305ad4ab50/records
