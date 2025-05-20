@@ -4,6 +4,8 @@ const v1WorkoutRouter = require("./v1/routes/workoutRoutes.js");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+app.use(express.json());
+
 app.get("/", (req, res) => {
   res.send(`
     <h1>Hello desde Home</h1>
