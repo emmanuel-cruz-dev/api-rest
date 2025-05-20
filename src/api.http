@@ -27,3 +27,15 @@ Content-Type: application/json
 
 ### Obtener workout por id
 GET http://localhost:3000/api/v1/workouts/61dbae02-c147-4e28-863c-db7bd402b2d6
+
+### Actualizar workout existente
+PATCH http://localhost:3000/api/v1/workouts/61dbae02-c147-4e28-863c-db7bd402b2d6
+Content-Type: application/json
+
+{
+  "name" : "Tommy VI",
+  "mode": "Full Time"
+}
+
+### Eliminar workout por id
+DELETE http://localhost:3000/api/v1/workouts/61dbae02-c147-4e28-863c-db7bd402b2d6
