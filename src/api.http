@@ -2,6 +2,7 @@ GET http://localhost:3000/api/v1/workouts
 
 ### Enviar un body
 POST http://localhost:3000/api/v1/workouts
+Content-Type: application/json
 
 {
   "name": "Core Buster",

@@ -12,14 +12,18 @@ const getOneWorkout = (req, res) => {
 
 const createNewWorkout = (req, res) => {
   const { body } = req;
+
   if (
+    !body ||
     !body.name ||
     !body.mode ||
     !body.equipment ||
     !body.exercises ||
     !body.trainerTips
   ) {
-    return;
+    return res
+      .status(400)
+      .send({ status: "FAILED", error: "Missing required fields" });
   }
 
   const newWorkout = {
