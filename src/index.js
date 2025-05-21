@@ -1,10 +1,13 @@
 const express = require("express");
 const v1WorkoutRouter = require("./v1/routes/workoutRoutes.js");
+const apicache = require("apicache");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const cache = apicache.middleware;
 
 app.use(express.json());
+app.use(cache("2 minutes"));
 
 app.get("/", (req, res) => {
   res.send(`
