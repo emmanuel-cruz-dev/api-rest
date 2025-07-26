@@ -14,7 +14,7 @@ const options = {
   apis: ["src/v1/routes/workoutRoutes.js", "src/database/Workout.js"],
 };
 
-// Docs en JSON format
+// Docs in JSON format
 const swaggerSpec = swaggerJSDoc(options);
 
 // Function to setup our docs
